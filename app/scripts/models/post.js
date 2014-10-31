@@ -16,7 +16,6 @@ BlogBackbone.Models = BlogBackbone.Models || {};
           date: new Date(),
           title: '',
           post: '',
-
         },
 
         validate: function(attrs, options) {

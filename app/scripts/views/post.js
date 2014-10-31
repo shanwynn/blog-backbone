@@ -20,7 +20,7 @@ BlogBackbone.Views = BlogBackbone.Views || {};
         },
 
         sendPost: function (event) {
-          console.log("I clicked on button", event);
+          console.log('I clicked on button', event);
         },
 
         initialize: function (model) {

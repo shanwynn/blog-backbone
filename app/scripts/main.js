@@ -11,7 +11,7 @@ window.BlogBackbone = {
         'use strict';
         console.log('[Application Has Started]', 'Hello from Backbone!');
         this.Posts = new BlogBackbone.Collections.Posts();
-        var app = new BlogBackbone.Views.Appview();
+        this.app  = new BlogBackbone.Views.Appview();
     }
 };
 

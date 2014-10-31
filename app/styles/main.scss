@@ -52,6 +52,7 @@ STYLES
 
 h1{
   margin-left: 40px;
+  padding-bottom: 50px;
   font-family: 'Pacifico', cursive;
   font-size: 2.5em;
   color: #970014;
@@ -63,7 +64,7 @@ h1{
 }
 
 input[type="text"] {
-  margin-left: 0;
+  margin-left: 30px;
   margin-bottom: 20px;
 	width: 500px;
   padding: 10px;
@@ -73,7 +74,8 @@ input[type="text"] {
 }
 
 .entry {
-  vertical-align: top;
+  float: left;
+  margin-top: -290px;
 }
 
 textarea {
@@ -122,10 +124,10 @@ textarea {
 }
 
 .blog-output {
-  margin-top: -500px;
+  float: right;
+  margin-top: 0;
 	width: 75%;
 	height: 600px;
-	float: right;
 	padding-left: 15px;
 }
 
@@ -139,7 +141,13 @@ textarea {
 }
 
 .main-container {
-  margin-top: 0;
+  margin-right: 10px;
+}
+
+.blog-container {
+  vertical-align: top;
+  margin-left: 20px;
+  margin-top: -20px;
 }
 
 footer {
