@@ -58,6 +58,11 @@ h1{
   color: #970014;
 }
 
+p {
+  margin-left: 50%;
+  margin-top: -6%;
+}
+
 .blog-post {
 	width: 75%;
 	height: 300px;
@@ -154,6 +159,7 @@ footer {
 	position: fixed;
 	bottom: 0;
 	width: 100%;
+  padding: 15px;
 	background: $footer-bg;
 	text-align: center;
 	color: $footer-text;

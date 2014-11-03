@@ -13,7 +13,7 @@ BlogBackbone.Views = BlogBackbone.Views || {};
 
         id: '',
 
-        className: '',
+        className: 'blog-post-area',
 
         events: {},
 

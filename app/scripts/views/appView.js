@@ -36,7 +36,7 @@ BlogBackbone.Views = BlogBackbone.Views || {};
 
         addOne: function (blogOutput) {
           var postView = new BlogBackbone.Views.Post(blogOutput);
-          $('#existingPosts div blog-output').append(postView.render().el);
+          $('#existingPosts div .blog-output').append(postView.render().el);
         },
 
         addAll: function () {
@@ -46,6 +46,7 @@ BlogBackbone.Views = BlogBackbone.Views || {};
         render: function () {
             this.$el.html(this.template());
             console.log('render called in appView');
+            return this;
         }
 
     });
