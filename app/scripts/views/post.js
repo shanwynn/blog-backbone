@@ -6,7 +6,7 @@ BlogBackbone.Views = BlogBackbone.Views || {};
     'use strict';
 
     BlogBackbone.Views.Post = Backbone.View.extend({
-
+        
         template: JST['app/scripts/templates/post.ejs'],
 
         tagName: 'div',

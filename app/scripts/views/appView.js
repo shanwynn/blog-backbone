@@ -24,10 +24,11 @@ BlogBackbone.Views = BlogBackbone.Views || {};
             post: blogPost.val(),
           });
           blogOutput.save();
+          blogTitle.val('');
+          blogPost.val('');
         },
 
         initialize: function () {
-            this.postsList = this.$el.find('#existingPosts');
             this.listenTo(BlogBackbone.Posts, 'add', this.addOne);
             this.listenTo(BlogBackbone.Posts, 'reset', this.addAll);
             this.render();
@@ -36,7 +37,8 @@ BlogBackbone.Views = BlogBackbone.Views || {};
 
         addOne: function (blogOutput) {
           var postView = new BlogBackbone.Views.Post(blogOutput);
-          $('#existingPosts div .blog-output').append(postView.render().el);
+          $('.blog-output').append(postView.render().el);
+          console.log('addOne Called');
         },
 
         addAll: function () {
