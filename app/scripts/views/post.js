@@ -6,14 +6,14 @@ BlogBackbone.Views = BlogBackbone.Views || {};
     'use strict';
 
     BlogBackbone.Views.Post = Backbone.View.extend({
-        
+
         template: JST['app/scripts/templates/post.ejs'],
 
         tagName: 'div',
 
         id: '',
 
-        className: 'send',
+        className: 'blog-post-area',
 
         events: {
           'click .send': 'sendPost'
