@@ -19,10 +19,6 @@ BlogBackbone.Views = BlogBackbone.Views || {};
           'click .send': 'sendPost'
         },
 
-        sendPost: function (event) {
-          console.log('I clicked on button', event);
-        },
-
         initialize: function (model) {
             this.model = model;
             this.listenTo(this.model, 'change', this.render);
@@ -30,7 +26,6 @@ BlogBackbone.Views = BlogBackbone.Views || {};
 
         render: function () {
             this.$el.html(this.template(this.model.toJSON()));
-            console.log('Blog entry posted');
             return this;
         }
 

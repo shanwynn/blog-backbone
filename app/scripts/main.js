@@ -9,7 +9,7 @@ window.BlogBackbone = {
     Posts: '',
     init: function () {
         'use strict';
-        console.log('[Application Has Started]', 'Hello from Backbone!');
+        
         this.Posts = new BlogBackbone.Collections.Posts();
         this.app  = new BlogBackbone.Views.Appview();
     }
